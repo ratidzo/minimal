@@ -36,11 +36,11 @@ export default function Nav() {
                 <Image alt="Ionic Logo" src={'/logo-ionic.svg'} 
                  width={'48'} height={'48'} />
                  <h1 className="text-xl font-semibold">
-                    Minimal
+                    Minimal&trade;
                  </h1>
             </div>
             {/* Nav links section. */}
-            <div>
+            <div className="mt-8 md:mt-0">
                 <ul className="flex flex-col md:flex-row md:flex gap-2  font-semibold">
                    {
                     links.map(link => (
