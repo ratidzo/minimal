@@ -36,7 +36,7 @@ export default function Nav() {
             </div>
             {/* Nav links section. */}
             <div>
-                <ul className="md:flex md:gap-16">
+                <ul className="md:flex md:gap-16 font-semibold">
                    {
                     links.map(link => (
                         <li>

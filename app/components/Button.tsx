@@ -1,7 +1,7 @@
 
 export default function Button(props: any) {
     return (
-        <button className="font-bold">
+        <button className="font-semibold">
             {props.children}
         </button>
     )
