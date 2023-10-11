@@ -29,10 +29,10 @@ export default function Nav() {
     return (
         <div className="md:flex md:flex-row md:justify-between md:px-8 md:py-4
                         py-4 px-4
-                        md:items-center  text-gray-700 
-                        flex flex-col gap-4">
+                        md:items-center text-gray-700 
+                        flex flex-col">
             {/* Logo container section */}
-            <div className="flex items-center gap-1">
+            <div className="flex items-center gap-1 px-4">
                 <Image alt="Ionic Logo" src={'/logo-ionic.svg'} 
                  width={'48'} height={'48'} />
                  <h1 className="text-xl font-semibold">
@@ -40,8 +40,8 @@ export default function Nav() {
                  </h1>
             </div>
             {/* Nav links section. */}
-            <div className="">
-                <ul className="flex flex-col md:flex-row md:flex gap-4 md:gap-12 font-semibold">
+            <div>
+                <ul className="flex flex-col md:flex-row md:flex gap-2  font-semibold">
                    {
                     links.map(link => (
                         <li className="px-4 py-2 hover:bg-slate-50
@@ -53,7 +53,7 @@ export default function Nav() {
                     ))
                    }
                 </ul>
-            </div>
+            </div>            
 
             {/* Login button */}
             <div className="px-4 py-2 hover:rounded hover:bg-slate-50">
