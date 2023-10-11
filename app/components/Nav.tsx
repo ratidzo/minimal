@@ -33,7 +33,6 @@ export default function Nav() {
                 <Image alt="Ionic Logo" src={'/logo-ionic.svg'} 
                  width={'40'} height={'40'} />
             </div>
-
             {/* Nav links section. */}
             <div>
                 <ul>
@@ -47,7 +46,13 @@ export default function Nav() {
                     ))
                    }
                 </ul>
+            </div>
 
+            {/* Login button */}
+            <div>
+                <Button>
+                    Hello
+                </Button>
             </div>
         </div>
     )
