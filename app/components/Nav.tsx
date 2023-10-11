@@ -17,7 +17,7 @@ export default function Nav() {
             url: '/'
         },
         {
-            name: 'Markeplace',
+            name: 'Marketplace',
             url: '/'
         },
         {
