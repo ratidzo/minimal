@@ -27,15 +27,16 @@ export default function Nav() {
     ]
 
     return (
-        <div>
+        <div className="md:flex md:justify-between md:px-6 md:py-4 
+                        md:items-center">
             {/* Logo container section */}
             <div>
                 <Image alt="Ionic Logo" src={'/logo-ionic.svg'} 
-                 width={'40'} height={'40'} />
+                 width={'48'} height={'48'} />
             </div>
             {/* Nav links section. */}
             <div>
-                <ul>
+                <ul className="md:flex md:gap-16">
                    {
                     links.map(link => (
                         <li>
