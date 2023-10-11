@@ -30,7 +30,7 @@ export default function Nav() {
         <div className="md:flex md:flex-row md:justify-between md:px-8 md:py-4
                         py-4 px-4
                         md:items-center text-gray-700 
-                        flex flex-col">
+                        flex flex-col text-lg md:text-base">
             {/* Logo container section */}
             <div className="flex items-center gap-1 px-4">
                 <Image alt="Ionic Logo" src={'/logo-ionic.svg'} 
