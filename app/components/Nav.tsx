@@ -62,7 +62,7 @@ export default function Nav() {
             {/* Login button */}
             <div className="px-4 py-2 hover:rounded hover:bg-slate-50">
                 <Button>
-                    Log in <span>&rarr;</span>
+                    Log in <span className="hidden md:inline">&rarr;</span>
                 </Button>
             </div>
         </div>
