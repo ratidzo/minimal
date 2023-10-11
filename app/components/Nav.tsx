@@ -28,7 +28,7 @@ export default function Nav() {
 
     return (
         <div className="md:flex md:flex-row md:justify-between md:px-8 md:py-4
-                        py-4 px-8
+                        py-4 px-4
                         md:items-center  text-gray-700 
                         flex flex-col gap-4">
             {/* Logo container section */}
@@ -44,7 +44,7 @@ export default function Nav() {
                 <ul className="flex flex-col md:flex-row md:flex gap-4 md:gap-12 font-semibold">
                    {
                     links.map(link => (
-                        <li className="px-2 py-2 hover:bg-indigo-50/50
+                        <li className="px-4 py-2 hover:bg-slate-50
                         hover:rounded  cursor-pointer">
                             <Link href={link.url}>
                                 {link.name}
@@ -56,7 +56,7 @@ export default function Nav() {
             </div>
 
             {/* Login button */}
-            <div>
+            <div className="px-4 py-2 hover:rounded hover:bg-slate-50">
                 <Button>
                     Log in <span>&rarr;</span>
                 </Button>
