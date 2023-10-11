@@ -3,6 +3,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import Button from "./Button"
+import { useState } from "react"
 
 
 export default function Nav() {
@@ -26,15 +27,17 @@ export default function Nav() {
         }
     ]
 
+    const [open, setOpen] = useState(false);
+
     return (
         <div className="md:flex md:flex-row md:justify-between md:px-8 md:py-4
                         py-4 px-4
-                        md:items-center text-gray-700 
+                        md:items-center text-gray-700
                         flex flex-col text-lg md:text-base">
             {/* Logo container section */}
             <div className="flex items-center gap-1 px-4">
                 <Image alt="Ionic Logo" src={'/logo-ionic.svg'} 
-                 width={'48'} height={'48'} />
+                 width={48} height={48} />
                  <h1 className="text-xl font-semibold">
                     Minimal&trade;
                  </h1>
@@ -59,12 +62,23 @@ export default function Nav() {
             <hr className="my-8 mx-4 md:hidden">
             </hr>
 
+            {/* Menu control */}
+            <div className="absolute right-8 top-6 md:hidden
+                            cursor-pointer"
+                             >
+                <Image alt="menu control" onClick={()=>{setOpen(!open)}}
+                 src={`${open ? '/close-outline.svg': '/menu-outline.svg'}`}
+                            width={28} height={28}
+                            />
+            </div>
+
             {/* Login button */}
             <div className="px-4 py-2 hover:rounded hover:bg-slate-50">
                 <Button>
                     Log in <span className="hidden md:inline">&rarr;</span>
                 </Button>
             </div>
+           
         </div>
     )
 }
