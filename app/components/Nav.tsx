@@ -36,7 +36,7 @@ export default function Nav() {
                         flex flex-col text-lg md:text-base 
                         ">
             {/* Logo container section */}
-            <div className="flex items-center gap-1 px-4">
+            <div className="flex items-center gap-1 px-4 bg-white">
                 <Image alt="Ionic Logo" src={'/logo-ionic.svg'} 
                  width={48} height={48} />
                  <h1 className="text-xl font-semibold">
@@ -45,7 +45,9 @@ export default function Nav() {
             </div>
             {/* Nav links section. */}
             <div className={`mt-8 md:mt-0 ${open? 'translate-y-0':
-                            'translate-y-[-490px]'} md:translate-y-0`}>
+                            'translate-y-[-490px]'} md:translate-y-0
+                            bg-white
+                            `}>
                 <ul className="flex flex-col md:flex-row md:flex gap-2  font-semibold">
                    {
                     links.map(link => (
@@ -63,7 +65,8 @@ export default function Nav() {
 
             {/* Horizontal divider */}
             <hr className={`my-8 mx-4 md:hidden 
-            ${open? 'translate-x-0': 'translate-y-[-490px]'}`}>
+            ${open? 'translate-y-0': 'translate-y-[-490px]'}
+            `}>
             </hr>
 
             {/* Menu control */}
@@ -73,13 +76,14 @@ export default function Nav() {
                 <Image alt="menu control" onClick={()=>{setOpen(!open)}}
                  src={`${open ? '/close-outline.svg': '/menu-outline.svg'}`}
                             width={28} height={28}
-                            />
+                />
             </div>
 
             {/* Login button */}
-            <div className={`px-4 py-2 hover:rounded hover:bg-slate-50
-            md:hover:bg-white
-            ${open ? 'translate-y-0': 'translate-y-[-490px]'} md:translate-y-0`}>
+            <div className={`px-4 py-2 hover:rounded hover:bg-slate-50 cursor-pointer
+            md:hover:bg-indigo-100
+            ${open ? 'translate-y-0': 'translate-y-[-490px]'} md:translate-y-0
+            `}>
                 <Button>
                     Log in <span className="hidden md:inline">&rarr;</span>
                 </Button>
