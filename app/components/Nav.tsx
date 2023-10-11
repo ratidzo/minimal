@@ -41,11 +41,11 @@ export default function Nav() {
             </div>
             {/* Nav links section. */}
             <div className="">
-                <ul className="md:flex flex flex-col gap-4 md:gap-12 font-semibold">
+                <ul className="flex flex-col md:flex-row md:flex gap-4 md:gap-12 font-semibold">
                    {
                     links.map(link => (
-                        <li className=" px-2 py-2 hover:bg-indigo-50/50
-                        hover:rounded">
+                        <li className="px-2 py-2 hover:bg-indigo-50/50
+                        hover:rounded  cursor-pointer">
                             <Link href={link.url}>
                                 {link.name}
                             </Link>
@@ -54,9 +54,6 @@ export default function Nav() {
                    }
                 </ul>
             </div>
-
-            {/* Divider */}
-            
 
             {/* Login button */}
             <div>
