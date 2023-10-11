@@ -51,7 +51,7 @@ export default function Nav() {
             {/* Login button */}
             <div>
                 <Button>
-                    Hello
+                    Hello <span>&rarr;</span>
                 </Button>
             </div>
         </div>
