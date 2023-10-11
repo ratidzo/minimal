@@ -53,7 +53,11 @@ export default function Nav() {
                     ))
                    }
                 </ul>
-            </div>            
+            </div>
+
+            {/* Horizontal divider */}
+            <hr className="my-8 mx-4 md:hidden">
+            </hr>
 
             {/* Login button */}
             <div className="px-4 py-2 hover:rounded hover:bg-slate-50">
