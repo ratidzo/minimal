@@ -50,6 +50,7 @@ export default function Nav() {
                    {
                     links.map(link => (
                         <li className="px-4 py-2 hover:bg-slate-50
+                         md:hover:bg-white
                         hover:rounded  cursor-pointer">
                             <Link href={link.url}>
                                 {link.name}
@@ -77,6 +78,7 @@ export default function Nav() {
 
             {/* Login button */}
             <div className={`px-4 py-2 hover:rounded hover:bg-slate-50
+            md:hover:bg-white
             ${open ? 'translate-y-0': 'translate-y-[-490px]'} md:translate-y-0`}>
                 <Button>
                     Log in <span className="hidden md:inline">&rarr;</span>
