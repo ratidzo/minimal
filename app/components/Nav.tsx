@@ -27,8 +27,8 @@ export default function Nav() {
     ]
 
     return (
-        <div className="md:flex md:justify-between md:px-6 md:py-4 
-                        md:items-center">
+        <div className="md:flex md:justify-between md:px-8 md:py-4 
+                        md:items-center  text-gray-700">
             {/* Logo container section */}
             <div>
                 <Image alt="Ionic Logo" src={'/logo-ionic.svg'} 
@@ -52,7 +52,7 @@ export default function Nav() {
             {/* Login button */}
             <div>
                 <Button>
-                    Hello <span>&rarr;</span>
+                    Log in <span>&rarr;</span>
                 </Button>
             </div>
         </div>
