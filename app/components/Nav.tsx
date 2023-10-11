@@ -28,9 +28,9 @@ export default function Nav() {
 
     return (
         <div className="md:flex md:flex-row md:justify-between md:px-8 md:py-4
-                        py-4
+                        py-4 px-8
                         md:items-center  text-gray-700 
-                        flex flex-col gap-8">
+                        flex flex-col gap-4">
             {/* Logo container section */}
             <div className="flex items-center gap-1">
                 <Image alt="Ionic Logo" src={'/logo-ionic.svg'} 
@@ -44,7 +44,8 @@ export default function Nav() {
                 <ul className="md:flex flex flex-col gap-4 md:gap-12 font-semibold">
                    {
                     links.map(link => (
-                        <li>
+                        <li className=" px-2 py-2 hover:bg-indigo-50/50
+                        hover:rounded">
                             <Link href={link.url}>
                                 {link.name}
                             </Link>
@@ -53,6 +54,9 @@ export default function Nav() {
                    }
                 </ul>
             </div>
+
+            {/* Divider */}
+            
 
             {/* Login button */}
             <div>
