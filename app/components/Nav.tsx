@@ -51,7 +51,7 @@ export default function Nav() {
                 <ul className="flex flex-col md:flex-row md:flex gap-2  font-semibold">
                    {
                     links.map(link => (
-                        <li className="px-4 py-2 hover:bg-slate-50
+                        <li key={link.name} className="px-4 py-2 hover:bg-slate-50
                          md:hover:bg-white
                         hover:rounded  cursor-pointer">
                             <Link href={link.url}>
